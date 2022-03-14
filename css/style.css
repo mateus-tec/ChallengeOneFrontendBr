@@ -215,13 +215,8 @@ main .container{
 
 .info a{
   display: inline-block;
-<<<<<<< HEAD
   padding: 13px;
-=======
-  padding: 12px;
->>>>>>> 64f72722ab3602a54de4386f9764b8d99aebefae
 }
-
 .repos{
   border: 1px solid #2A7AE4;
   color: #2A7AE4;
