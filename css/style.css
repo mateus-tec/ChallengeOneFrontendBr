@@ -215,7 +215,11 @@ main .container{
 
 .info a{
   display: inline-block;
+<<<<<<< HEAD
   padding: 13px;
+=======
+  padding: 12px;
+>>>>>>> 64f72722ab3602a54de4386f9764b8d99aebefae
 }
 
 .repos{
@@ -225,7 +229,7 @@ main .container{
 }
 
 .demo{
-  margin-left: 16px;
+  margin-left: 8px;
   background: #2A7AE4;
   color: white;
   border-radius: 3px;
