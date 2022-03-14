@@ -1,0 +1,291 @@
+.container {
+  padding: 15px 80px;
+  margin: 0 80px;
+}
+
+.logo-left {
+  width: 200px;
+  align-items: center;
+  line-height: 20px;
+}
+
+.logo-left img {
+  width: 22px;
+  height: 22px;
+  padding: 0 5px;
+}
+
+.logo-left a {
+  position: absolute;
+
+  color: #464646;
+  font-weight: 700;
+}
+
+.email {
+  font-weight: 700;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin: 10px;
+}
+
+.menu li a {
+  display: block;
+  color: #464646;
+}
+
+/*Seção aparesentação*/
+
+#topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.apresentacao {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 61px;
+  color: #464646;
+}
+
+.topo-info p {
+  color: #464646;
+  padding: 20px 0;
+}
+
+.icon {
+  width: 330px;
+  height: 330px;
+  margin-top: 25px;
+  object-fit: cover;
+  clip-path: circle();
+}
+
+.topo-info {
+  width: 750px;
+  height: 155px;
+  text-align: start;
+}
+
+.topo-info img {
+  width: 16px;
+  height: 16px;
+}
+
+.topo-info a {
+  color: #464646;
+  margin-right: 32px;
+}
+
+.seta {
+  margin-left: 4px;
+}
+
+/*Seção sobre-mim*/
+
+#sobre-mim {
+  background: #eaf2fd;
+  margin-top: 95px;
+}
+.titulo-sobre {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 64px;
+}
+
+.paragrafo{
+  margin-top: 16px;
+  width: 700px;
+  height: 133px;
+}
+
+/*Seção skills e hobbies*/
+
+.titulo-section {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 82px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.bloco-skills {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 156px;
+  height: 154px;
+  background: #ffff;
+  padding: 16px;
+  border-radius: 15px;
+}
+
+.bloco-skills img {
+  width: 23px;
+  height: 37px;
+}
+
+.bloco-skills p {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/*formação academica*/
+#formacao {
+  background: #eaf2fd;
+}
+
+.formacoes {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.form {
+  width: 368px;
+  height: 286px;
+  background: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.form img {
+  width: 190px;
+  height: 130px;
+}
+
+.curso {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.ano{
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*experiencia*/
+.div-exp {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  padding: 32px  0;
+  
+}
+
+.image img{
+  width: 752px;
+  height: 406px;
+  border-radius: 15px;
+}
+
+.info h2{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.info p{
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.info a{
+  display: inline-block;
+  padding: 14px;
+}
+
+.repos{
+  border: 1px solid #2A7AE4;
+  color: #2A7AE4;
+  border-radius: 3px;
+}
+
+.demo{
+  margin-left: 16px;
+  background: #2A7AE4;
+  color: white;
+  border-radius: 3px;
+}
+
+.container .exp2 > div:first-child{
+  order: 2;
+}
+
+/*Contato*/
+#contatos{
+  background:#eaf2fd;
+}
+
+.contato{
+  display: flex;
+  justify-content: space-around;
+}
+.formulario{
+  padding-bottom: 32px;
+}
+
+.formulario h2{
+  font-size: 32px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.formulario p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.formulario a{
+  background: #2A7AE4;
+  color: white;
+  padding: 16px;
+}
+
+input, textarea{
+  display: block;
+  width: 70%;
+  padding:10px 25px;
+  margin: 32px 0;
+  border-radius: 3px;
+  border: none;
+  resize: none;
+}
+
+/*footer*/
+.footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer h2,p{
+  font-size: 16px;
+  font-weight: 500;
+}
+
