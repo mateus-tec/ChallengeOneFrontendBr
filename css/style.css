@@ -1,56 +1,56 @@
-.logo-left {
-  width: 200px;
-  align-items: center;
-  line-height: 20px;
-}
-
-.logo-left img {
-  width: 22px;
-  height: 22px;
-  padding: 0 5px;
-}
-
-.logo-left a {
-  position: absolute;
-
-  color: #464646;
-  font-weight: 700;
-}
-
-.email {
-  font-weight: 700;
+header{
+  background: #eaf2fd;
 }
 header .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 980px;
+  width: 90%;
+  max-width: 1080px;
   margin: auto;
+  align-items: center;
 }
 .menu {
   display: flex;
 }
 
-.menu li {
-  margin: 10px;
-}
-
 .menu li a {
   display: block;
   color: #464646;
+  padding: 1.4rem;
+  transition: all 250ms linear 0s;
+}
+.menu li a:hover{
+  background: rgba(18, 131, 184, 0.15)
+}
+
+.logo-left{
+  display: flex;
+  justify-content: center;
+}
+
+.logo-left img {
+  padding: 0 5px;
+}
+
+.logo-left a {
+  color: #464646;
+  font-weight: 700;
+  padding: 15px 0;
+}
+
+.email {
+  font-weight: 700;
 }
 
 /*Seção aparesentação*/
-main .container{
-  width: 100%;
-  max-width: 980px;
-  margin: auto;
-}
-#topo {
+#topo .container{
   display: flex;
+  justify-content: space-around;
+  width: 90%;
   align-items: center;
-  justify-content: space-between;
+  max-width: 1080px;
+  margin: auto;
+  
 }
 
 .apresentacao {
@@ -66,17 +66,10 @@ main .container{
 }
 
 .icon {
-  width: 330px;
-  height: 330px;
-  margin-top: 25px;
+  width: 368px;
+  height: 368px;
   object-fit: cover;
   clip-path: circle();
-}
-
-.topo-info {
-  width: 750px;
-  height: 155px;
-  text-align: start;
 }
 
 .topo-info img {
@@ -95,14 +88,19 @@ main .container{
 
 /*Seção sobre-mim*/
 
+#sobre-mim .container{
+  width: 90%;
+  max-width: 1080px;
+  margin: auto;
+}
+
 #sobre-mim {
   background: #eaf2fd;
-  margin-top: 95px;
+  padding: 60px 0;
 }
 .titulo-sobre {
   font-size: 32px;
   font-weight: bold;
-  margin-top: 64px;
 }
 
 .paragrafo{
@@ -239,10 +237,18 @@ main .container{
   background:#eaf2fd;
 }
 
-.contato{
+#contatos .container{
+  width: 90%;
+  max-width: 1080px;
+  margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
+.contato {
+  padding: 10% 0;
+}
+
 .formulario{
   padding-bottom: 32px;
 }
