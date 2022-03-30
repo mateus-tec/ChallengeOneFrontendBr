@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <title>Portifolio - Mateus Henrique</title>
 </head>
 
@@ -21,8 +23,12 @@
                 <img src="img/Group.svg" alt="">
                 <a href="index.html">Mateus Henrique de Souza</a>
             </div>
+
             <!--Menu-->
-            <nav class="navigation">
+            <nav id=nav class="navigation">
+                <button id="btn-menu" aria-expanded="false">
+                    <span id="hamburguer"></span>
+                </button>
                 <ul class="menu">
                     <li><a href="#sobre-mim">Sobre mim</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -44,10 +50,12 @@
                     <p>Eu sou formada em lorem ipsum sit amet consectetur e atualmente estou participando no projeto
                         Oracle
                         ONE na Alura.</p>
-                    <a href="">Github <img class="seta" src="img/Vector.svg" alt=""></a>
-                    <a href="">Linkedin <img class="seta" src="img/Vector.svg" alt=""></a>
-                    <a href="">Instagram <img class="seta" src="img/Vector.svg" alt=""></a>
-                    <a href="">Curriculo <img class="seta" src="img/Vector.svg" alt=""></a>
+                    <div class="links">
+                        <a href="">Github <img class="seta" src="img/Vector.svg" alt=""></a>
+                        <a href="">Linkedin <img class="seta" src="img/Vector.svg" alt=""></a>
+                        <a href="">Instagram <img class="seta" src="img/Vector.svg" alt=""></a>
+                        <a href="">Curriculo <img class="seta" src="img/Vector.svg" alt=""></a>
+                    </div>
                 </div>
                 <img class="icon" src="img/ReadyPlayerMe-Avatar.png" alt="">
             </div>
@@ -68,7 +76,7 @@
                         egestas
                         metus vitae, aliquet metus.</p>
                 </div>
-                <img src="img/assinatura.svg" class="assinatura" alt="">
+                <div class="assinatura"><img src="img/assinatura.svg" alt=""></div>
             </div>
         </section>
 
@@ -116,7 +124,7 @@
                 <h2 class="titulo-section">Formação acadêmica</h2>
                 <div class="formacoes">
                     <div class="form">
-                        <img src="img/alura.svg" alt="">
+                        <img src="img/especial-logo-alura.png" alt="">
                         <p class="curso">Oracle Next Education</p>
                         <p class="ano">2021 - cursando</p>
                     </div>
@@ -224,6 +232,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
     <script src="js/validade.js"></script>
 </body>
 

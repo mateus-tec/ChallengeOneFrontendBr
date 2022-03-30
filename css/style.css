@@ -1,11 +1,10 @@
 body {
   background-image: url(/img/bg-noise.png);
   background-position: center;
-  background: #200A48;
-  background: -moz-linear-gradient(left, #200A48 0%, #0A0522 100%);
-  background: -webkit-linear-gradient(left, #200A48 0%, #0A0522 100%);
-  background: linear-gradient(to right, #200A48 0%, #0A0522 100%);
-	min-height: 100vh;
+  background:linear-gradient(#0677c2,#200a48) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
   line-height: 1;
 }
 
@@ -18,6 +17,10 @@ header .container {
   align-items: center;
 }
 
+#btn-menu{
+  display: none;
+}
+
 .menu {
   display: flex;
 }
@@ -27,11 +30,11 @@ header .container {
   padding: 1.4rem;
   transition: all 250ms linear 0s;
 }
-.menu li a:hover{
-  background: rgba(18, 131, 184, 0.15)
+.menu li a:hover {
+  background: rgba(18, 131, 184, 0.15);
 }
 
-.logo-left{
+.logo-left {
   display: flex;
   justify-content: center;
 }
@@ -50,14 +53,13 @@ header .container {
 }
 
 /*Seção aparesentação*/
-#topo .container{
+#topo .container {
   display: flex;
   justify-content: space-around;
   width: 90%;
   align-items: center;
   max-width: 1080px;
   margin: auto;
-  
 }
 
 .apresentacao {
@@ -87,19 +89,17 @@ header .container {
 
 .seta {
   margin-left: 4px;
-  
 }
 
 /*Seção sobre-mim*/
 
-#sobre-mim .container{
+#sobre-mim .container {
   width: 90%;
   max-width: 1080px;
   margin: auto;
 }
 
 #sobre-mim {
-
   padding: 60px 0;
 }
 .titulo-sobre {
@@ -108,11 +108,15 @@ header .container {
   color: #eaf2fd;
 }
 
-.paragrafo{
+.paragrafo {
   margin-top: 16px;
   width: 700px;
   height: 133px;
   color: #eaf2fd;
+}
+
+.assinatura{
+  margin-top: 15px;
 }
 
 /*Seção skills e hobbies*/
@@ -138,9 +142,10 @@ header .container {
   width: 156px;
   height: 154px;
   padding: 16px;
-  box-shadow: rgba(255, 255, 255, 0.363) 0px 0px 1.2px inset, rgba(255, 255, 255, 0.123) 0px 0px 14.1107px inset;
+  box-shadow: rgba(255, 255, 255, 0.363) 0px 0px 1.2px inset,
+    rgba(255, 255, 255, 0.123) 0px 0px 14.1107px inset;
   border-radius: 15px;
-  background:transparent;
+  background: transparent;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(1.5px);
 }
@@ -173,10 +178,11 @@ header .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
-  box-shadow: rgba(255, 255, 255, 0.363) 0px 0px 1.2px inset, rgba(255, 255, 255, 0.123) 0px 0px 14.1107px inset;
-  border-radius: 15px;
-  background:transparent;
+  gap: 3px;
+  box-shadow: rgba(255, 255, 255, 0.363) 0px 0px 1.2px inset,
+    rgba(255, 255, 255, 0.123) 0px 0px 14.1107px inset;
+  border-radius: 10px;
+  background: transparent;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(1.5px);
   background: rgba(255, 255, 255, 0.021);
@@ -184,15 +190,14 @@ header .container {
 
 .form img {
   width: 190px;
-  height: 130px;
 }
 
 .curso {
   font-weight: bold;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
-.ano{
+.ano {
   margin-top: 8px;
   font-size: 16px;
   font-weight: 500;
@@ -204,50 +209,49 @@ header .container {
   justify-content: center;
   gap: 40px;
   align-items: center;
-  padding: 32px  0;
-  
+  padding: 32px 0;
 }
 
-.image img{
+.image img {
   width: 700px;
   height: 406px;
   border-radius: 15px;
 }
 
-.info h2{
+.info h2 {
   font-size: 22px;
   font-weight: bold;
 }
 
-.info p{
+.info p {
   margin: 8px 0;
   font-size: 16px;
 }
 
-.info a{
+.info a {
   display: inline-block;
   padding: 13px;
 }
-.repos{
-  border: 1px solid #2A7AE4;
-  color: #2A7AE4;
+.repos {
+  border: 1px solid #2a7ae4;
+  color: #2a7ae4;
   border-radius: 3px;
 }
 
-.demo{
+.demo {
   margin-left: 8px;
-  background: #2A7AE4;
+  background: #2a7ae4;
   color: white;
   border-radius: 3px;
 }
 
-.container .exp2 > div:first-child{
+.container .exp2 > div:first-child {
   order: 2;
 }
 
 /*Contato*/
 
-#contatos .container{
+#contatos .container {
   width: 90%;
   max-width: 1080px;
   margin: auto;
@@ -259,48 +263,51 @@ header .container {
   padding: 10% 0;
 }
 
-.formulario{
+.formulario {
   padding-bottom: 32px;
 }
 
-.formulario h2{
+.formulario h2 {
   font-size: 32px;
   font-weight: bold;
   margin: 8px 0;
 }
 
-.formulario p{
+.formulario p {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
 }
 
-.formulario button{
-  background: #2A7AE4;
+.formulario button {
+  background: #2a7ae4;
   color: white;
   padding: 16px;
   border: none;
 }
 
-input, textarea{
+input,
+textarea {
   display: block;
   width: 80%;
-  padding:20px 25px;
+  padding: 20px 25px;
   margin: 32px 0;
   border-radius: 3px;
   border: none;
   resize: none;
-  box-shadow: rgba(255, 255, 255, 0.363) 0px 0px 1.2px inset, rgba(255, 255, 255, 0.123) 0px 0px 14.1107px inset;
-  background:#ffffff09;
+  box-shadow: rgba(255, 255, 255, 0.363) 0px 0px 1.2px inset,
+    rgba(255, 255, 255, 0.123) 0px 0px 14.1107px inset;
+  background: #ffffff09;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(1.5px);
   color: #eaf2fd;
 }
 
 /*footer*/
-.footer{
-  box-shadow: rgba(255, 255, 255, 0.363) 0px 0px 1.2px inset, rgba(255, 255, 255, 0.123) 0px 0px 14.1107px inset;
-  background:transparent;
+.footer {
+  box-shadow: rgba(255, 255, 255, 0.363) 0px 0px 1.2px inset,
+    rgba(255, 255, 255, 0.123) 0px 0px 14.1107px inset;
+  background: transparent;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(1.5px);
   display: flex;
@@ -310,8 +317,132 @@ input, textarea{
   padding: 15px;
 }
 
-.footer h2,p{
+.footer h2,
+p {
   font-size: 16px;
   font-weight: 500;
 }
 
+
+/*Media query*/
+
+
+
+@media (max-width: 768px) {
+  header .container{
+    height: 70px;
+  }
+  .logo-left a{
+    font-size:1.2rem ;
+  }
+  .menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    right: 0px;
+    background: #0a0522;
+    height: 0px;
+    transition: .6s;
+    z-index: 10000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active .menu{
+    height:100vh;
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .menu a{
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .menu li{
+    border-bottom:2px solid rgba(255, 255, 255,.051);
+  }
+
+  #btn-menu{
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    color: #eaf2fd;
+    cursor: pointer;
+    gap: .5rem;
+  }
+
+  #hamburguer{
+    color:#eaf2fd;
+    width: 20px;
+    border-top: 2px solid;
+    display: block;
+  }
+  #hamburguer::after, #hamburguer::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+
+  #nav.active #hamburguer{
+    border-top-color: transparent;
+  }
+  #nav.active #hamburguer::after{
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburguer::before{
+    transform: rotate(-135deg);
+    top: 7px;
+  }
+
+  /*topo*/
+  #topo .container{
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+    padding:0 15px;
+  }
+
+  #topo .container  > div:first-child{
+    order: 2;
+  }
+
+  .apresentacao{
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 15px 0;
+  }
+
+  .links a{
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .links img{
+    width: 9px;
+    height: 9px;
+  }
+  .icon{
+    width: 120px;
+    height: 120px;
+  }
+
+/*sobre-mim*/
+#sobre-mim .container{
+  display: block;
+  flex-direction: column;
+}
+
+.paragrafo {
+    width: auto;
+}
+ 
+}
